@@ -1,5 +1,7 @@
 package com.alibou.example1;
 import java.util.*;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -16,6 +18,7 @@ public class School {
     @OneToMany(
             mappedBy = "school" // same name as the attribute in student
     ) // one school can have many students
+    @JsonManagedReference // parent level : parent is in charge of the child and prevents the child from serializing the parent
     private List<Student> students;
 
     public School() {

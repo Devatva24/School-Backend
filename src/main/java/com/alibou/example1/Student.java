@@ -1,5 +1,6 @@
 package com.alibou.example1;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 @Entity
 @Table(name = "T_STUDENT")
@@ -27,6 +28,7 @@ public class Student {
     @JoinColumn(
             name = "school_id"
     )
+    @JsonBackReference
     private School school;
 
 //    @Column(updatable = false)
