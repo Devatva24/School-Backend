@@ -1,4 +1,4 @@
-package com.alibou.example1;
+package com.alibou.example1.student;
 
 public record StudentResponseDto(
         String firstname,

@@ -1,6 +1,7 @@
-package com.alibou.example1;
+package com.alibou.example1.school;
 import java.util.*;
 
+import com.alibou.example1.student.Student;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
