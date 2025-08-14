@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 # School Management System Backend
 
 A **Spring Boot REST API** for managing schools, students, and their profiles. Built with **Java 17**, **Spring Boot 3**, **Spring Data JPA**, and **PostgreSQL** (configurable). Includes DTO mapping, service-layer architecture, and sample tests.
